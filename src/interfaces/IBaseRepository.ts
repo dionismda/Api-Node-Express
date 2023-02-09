@@ -1,7 +1,7 @@
 export interface IBaseRepository<T> {
-    find(item: T): Promise<T[]>;
-    findOne(id: string): Promise<T>;        
-    create(item: T): Promise<T>;
-    update(id: string, item: T): Promise<T>;
-    delete(id: string): Promise<boolean>;    
+    find(data: T): T[];
+    findOne(id: string): T;        
+    create(data: T): T;
+    update(data: T): T;
+    delete(data: T): boolean;    
 }
